@@ -38,7 +38,7 @@ x-ollama: &service-ollama
   expose:
     - 11434/tcp
   environment:
-    - OLLAMA_CONTEXT_LENGTH=64000  # Actaul context window is half of this value
+    - OLLAMA_CONTEXT_LENGTH=64000  
     - OLLAMA_FLASH_ATTENTION=1
     - OLLAMA_KV_CACHE_TYPE=q8_0
     - OLLAMA_MAX_LOADED_MODELS=1
